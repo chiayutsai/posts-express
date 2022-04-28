@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "d34ece52-d364-4662-9983-7e1f54862621",
+		"name": "post-express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protected-lake-52624.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"protected-lake-52624",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"test\",\r\n    \"content\": \"內容\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://protected-lake-52624.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"protected-lake-52624",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://protected-lake-52624.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"protected-lake-52624",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://protected-lake-52624.herokuapp.com/posts/626a47e01aae784d3956431a",
+					"protocol": "https",
+					"host": [
+						"protected-lake-52624",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626a47e01aae784d3956431a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新一筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\"修改內容\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://protected-lake-52624.herokuapp.com/posts/626a47f71aae784d3956431f",
+					"protocol": "https",
+					"host": [
+						"protected-lake-52624",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626a47f71aae784d3956431f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
